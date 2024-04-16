@@ -117,7 +117,7 @@ if __name__ == "__main__":
         Role_hyper, H = gen_attribute_hg(args.node_num, train_role_graph[i], Role_set, X=None)
         train_hypergraph += [scipy_sparse_mat_to_torch_sparse_tensor(Role_hyper.laplacian()).to(device)]
         if i > 0:
-            previous_role_hypergraph,Cross_role_hypergraph=cross_role_hypergraphn_nodes(args.node_num, H, train_role_graph[i - 1], train_role_graph[i], Role_set, w=-11,delta_t=1, X=None)#对w进行消融实验,Cross_role_hypergraph 考虑前一时刻的memory
+            previous_role_hypergraph,Cross_role_hypergraph=cross_role_hypergraphn_nodes(args.node_num, H, train_role_graph[i - 1], train_role_graph[i], Role_set, w=-11,delta_t=1, X=None)
             cross_role_hyper += [scipy_sparse_mat_to_torch_sparse_tensor(Cross_role_hypergraph).to(device)]
             cross_role_laplacian += [scipy_sparse_mat_to_torch_sparse_tensor(previous_role_hypergraph.laplacian()).to(device)]
 
