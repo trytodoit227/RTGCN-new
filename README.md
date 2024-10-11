@@ -23,4 +23,17 @@ For node classification
   
 - The code will be continuously improved and updated.
 
+## 5. Citation
+- If you find our work helpful, please consider citing the following.
+```
+@inproceedings{du2024representation,
+  title={Representation Learning of Temporal Graphs with Structural Roles},
+  author={Du, Huaming and Shi, Long and Chen, Xingyan and Zhao, Yu and Zhang, Hegui and Yang, Carl and Zhuang, Fuzhen and Kou, Gang},
+  booktitle={Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={654--665},
+  year={2024}
+}
+```
+
+
 
